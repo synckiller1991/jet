@@ -138,9 +138,12 @@ var doodle = (function() {
         _l("starting from:" + init_x + " ," + init_y);
         var formation = new Formation(init_x, init_y);
 
-        formation.addPlane(0, 0, "255, 0, 0");
-        formation.addPlane(50, -50, "222, 222, 222");
-        formation.addPlane(100, 0, "8, 0, 255");
+        formation.addPlane(0, -0, "255, 0, 0");
+        formation.addPlane(15, -25, "255, 255, 255");
+        formation.addPlane(30, -50, "0, 8, 255");
+        formation.addPlane(45, -50, "0, 8, 255");
+        formation.addPlane(60, -25, "255, 255, 255");
+        formation.addPlane(75, 0, "255, 0, 0");
 
         var target_y = stage.ctx.canvas.height - init_y;
         var target_x = stage.ctx.canvas.width - init_x;
